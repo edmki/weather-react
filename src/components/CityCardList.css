@@ -1,0 +1,41 @@
+.CityCardList {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* AddButton */
+
+.AddButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.AddButton .add-icon {
+    height: 230px;
+    width: 230px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.App.dark .AddButton .add-icon {
+    background-color: #292929;
+}
+
+.App.dark .AddButton .add-icon svg {
+    stroke: white;
+}
+
+.App.light .AddButton .add-icon {
+    background-color: #fff;
+    /* border: 1px solid #d2d2d2; */
+}
+
+.App.light .AddButton .add-icon svg {
+    stroke: #292929;
+}

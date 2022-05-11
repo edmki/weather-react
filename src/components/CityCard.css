@@ -1,0 +1,192 @@
+.CityCard .CityCard-content {
+    padding: 30px;
+    border-radius: 20px;
+    height: 100%;
+    position: relative;
+}
+
+.CityCard-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.CityCard-loader {
+    align-self: center;
+}
+
+.App.dark .CityCard .CityCard-content {
+    background-color: #292929;
+}
+
+.App.light .CityCard .CityCard-content {
+    /* border: 1px solid #d2d2d2; */
+    background-color: #fff;
+}
+
+.CityCard-name {
+    font-size: 24px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.CityCard-icon {
+    height: 160px;
+    margin-top: -20px;
+    text-align: center;
+}
+
+.CityCard-temperature {
+    font-size: 64px;
+    font-weight: 100;
+    text-align: center;
+}
+
+.App.light  .CityCard-temperature {
+    font-weight: 300;
+}
+
+.CityCard-temperature:after {
+    content: "°";
+    position: absolute;
+}
+
+.CityCard-range {
+    display: flex;
+    flex-direction: row;
+    font-size: 36px;
+    font-weight: 100;
+    margin-top: 10px;
+}
+
+.App.light  .CityCard-range {
+    font-weight: 300;
+}
+
+.CityCard-max {
+    margin-left: auto;
+    position: relative;
+}
+
+.CityCard-max:before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 5px 5px 5px;
+    border-color: transparent transparent #dc4c4c transparent;
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.CityCard-max:after {
+    content: "Máx";
+    display: block;
+    font-size: 14px;
+    text-align: center;
+    color: #dc4c4c;
+    font-weight: 300;
+}
+
+.CityCard-min {
+    position: relative;
+}
+
+.CityCard-min:before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 5px 0 5px;
+    border-color: #3ba92a transparent transparent transparent;
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.CityCard-min:after {
+    content: "Mín";
+    display: block;
+    font-size: 14px;
+    text-align: center;
+    color: #3ba92a;
+    font-weight: 300;
+}
+
+.CityCard-delete {
+    position: absolute !important;
+    top: 5px;
+    right: 5px;
+}
+
+/* CurrentWeather */
+.CurrentWeather {
+    width: 100%;
+}
+
+/* WeatherNext */
+.WeatherNext {
+    display: flex;
+    margin-top: 30px;
+}
+
+.WeatherNext-item {
+    text-align: center;
+    margin-right: 25px;
+}
+
+.WeatherNext-time {
+    font-size: 10px;
+    color: #949494;
+}
+
+.App.light .WeatherNext-time {
+    font-size: 10px;
+    color: #6b6b6b;
+}
+
+.WeatherNext-icon {
+    margin: -10px;
+}
+
+.WeatherNext-temperature {
+    font-size: 16px;
+}
+
+.WeatherNext-rain {
+    font-size: 10px;
+    color: #6b6b6b;
+    white-space: nowrap;
+}
+
+/* card grid */
+.CityCard {
+    width: 100%;
+    padding: 20px;
+}
+@media (min-width: 620px) {
+    .CityCard {
+        width: 50%;
+    }
+}
+
+@media (min-width: 910px) {
+    .CityCard {
+        width: 33.3333%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .CityCard {
+        width: 25%;
+    }
+}
+
+@media (min-width: 1490px) {
+    .CityCard {
+        width: 20%;
+    }
+}
