@@ -21,27 +21,23 @@ function CityCard(props) {
     useEffect(() => {
         if (props.name)
             loadCurrentWeather(props.name);
-            
-        return () => {
-            console.log("cleaned up");
-        };
     }, []);
 
     useEffect(() => {
         if (weatherData && props.onSuccessQuery) {
-            props.onSuccessQuery(query);
+            props.onSuccessQuery(query, props.id);
         }
     }, [weatherData]);
 
     useEffect(() => {
         if (error && props.onError) {
-            props.onError(error);
+            props.onError(error, props.id);
         }
     }, [error]);
 
     const submitHandler = async function (e) {
         e.preventDefault();
-        await loadCurrentWeather(query);
+        loadCurrentWeather(query);
     }
 
     const loadCurrentWeather = async function (cityName) {
@@ -95,8 +91,8 @@ function CityCard(props) {
     }
 
     const searchForm = (
-        <FormControl component="form" onSubmit={submitHandler} sx={{ p: '2px 4px', display: 'flex', alignItems: 'center', width: "100%", flexDirection: "row" }}>
-            <Input autoFocus={true} required={true} color={"primary"} sx={{ ml: 1, flex: 1 }} onInput={(e) => setQuery(e.target.value)} />
+        <FormControl component="form" onSubmit={submitHandler} name="city" sx={{ p: '2px 4px', display: 'flex', alignItems: 'center', width: "100%", flexDirection: "row" }}>
+            <Input autoFocus={true} placeholder="Cidade" required={true} color={"primary"} sx={{ ml: 1, flex: 1 }} onInput={(e) => setQuery(e.target.value)} />
             <IconButton type="submit" sx={{ p: '10px' }} aria-label="search">
                 <SearchIcon />
             </IconButton>
