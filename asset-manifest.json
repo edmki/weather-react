@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "./weather-react/static/css/main.08621a33.chunk.css",
-    "main.js": "./weather-react/static/js/main.0b131bfd.chunk.js",
-    "main.js.map": "./weather-react/static/js/main.0b131bfd.chunk.js.map",
-    "runtime-main.js": "./weather-react/static/js/runtime-main.4a99c022.js",
-    "runtime-main.js.map": "./weather-react/static/js/runtime-main.4a99c022.js.map",
-    "static/js/2.72764e01.chunk.js": "./weather-react/static/js/2.72764e01.chunk.js",
-    "static/js/2.72764e01.chunk.js.map": "./weather-react/static/js/2.72764e01.chunk.js.map",
-    "static/js/3.8798fc4f.chunk.js": "./weather-react/static/js/3.8798fc4f.chunk.js",
-    "static/js/3.8798fc4f.chunk.js.map": "./weather-react/static/js/3.8798fc4f.chunk.js.map",
-    "index.html": "./weather-react/index.html",
-    "static/css/main.08621a33.chunk.css.map": "./weather-react/static/css/main.08621a33.chunk.css.map",
-    "static/js/2.72764e01.chunk.js.LICENSE.txt": "./weather-react/static/js/2.72764e01.chunk.js.LICENSE.txt",
-    "static/media/waterdrop.0c73ddac.svg": "./weather-react/static/media/waterdrop.0c73ddac.svg"
+    "main.css": "/weather-react/static/css/main.08621a33.chunk.css",
+    "main.js": "/weather-react/static/js/main.0b131bfd.chunk.js",
+    "main.js.map": "/weather-react/static/js/main.0b131bfd.chunk.js.map",
+    "runtime-main.js": "/weather-react/static/js/runtime-main.cde68d68.js",
+    "runtime-main.js.map": "/weather-react/static/js/runtime-main.cde68d68.js.map",
+    "static/js/2.72764e01.chunk.js": "/weather-react/static/js/2.72764e01.chunk.js",
+    "static/js/2.72764e01.chunk.js.map": "/weather-react/static/js/2.72764e01.chunk.js.map",
+    "static/js/3.8798fc4f.chunk.js": "/weather-react/static/js/3.8798fc4f.chunk.js",
+    "static/js/3.8798fc4f.chunk.js.map": "/weather-react/static/js/3.8798fc4f.chunk.js.map",
+    "index.html": "/weather-react/index.html",
+    "static/css/main.08621a33.chunk.css.map": "/weather-react/static/css/main.08621a33.chunk.css.map",
+    "static/js/2.72764e01.chunk.js.LICENSE.txt": "/weather-react/static/js/2.72764e01.chunk.js.LICENSE.txt",
+    "static/media/waterdrop.0c73ddac.svg": "/weather-react/static/media/waterdrop.0c73ddac.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.4a99c022.js",
+    "static/js/runtime-main.cde68d68.js",
     "static/js/2.72764e01.chunk.js",
     "static/css/main.08621a33.chunk.css",
     "static/js/main.0b131bfd.chunk.js"
