@@ -1,4 +1,5 @@
 import './CityCard.css';
+import { ReactComponent as Waterdrop} from '../assets/waterdrop.svg';
 import { useState, useEffect } from 'react';
 import HorizontalScroll from '../utils/HoizontalScroll';
 import CircularProgress from '@mui/material/CircularProgress';
@@ -160,7 +161,7 @@ function WeatherNext(props) {
                         <div className='WeatherNext-time'>{new Date(data.dt * 1000).getHours()}:00</div>
                         <Tooltip title={data.weather[0].description}><div className='WeatherNext-icon'><img draggable="false" src={iconUrl} alt="weather icon" /></div></Tooltip>
                         <div className='WeatherNext-temperature'>{temp}°</div>
-                        <Tooltip title="Chuva"><div className='WeatherNext-rain'><img src='./waterdrop.svg' alt="water drop" /> {precipitation}%</div></Tooltip>
+                        <Tooltip title="Chuva"><div className='WeatherNext-rain'><Waterdrop /> {precipitation}%</div></Tooltip>
                     </div>
                 );
             })}
